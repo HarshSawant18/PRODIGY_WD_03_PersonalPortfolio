@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Merienda:wght@300..900&display=swap');
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+body {
+    display: flex;
+    /* font-family: "DM Serif Display", serif; */
+    font-family: "Merienda", cursive;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+/*
+
+
+
+
+
+
+
+*/
+
+.sidenav {
+
+    background-color: #262728;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+}
+
+
+.sidenav img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.sidenav h2 {
+    color: #17a2b8;
+}
+
+.sidenav p {
+    color: #ffc107;
+    margin-bottom: 30px;
+}
+
+.sidenav ul li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sidenav li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+}
+
+.sidenav li a:hover {
+    color: #17a2b8;
+}
+
+main {
+    margin-left: 15%;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+section {
+    margin-bottom: 50px;
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+
+section.active {
+    display: block;
+}
+
+.highlight {
+    color: #17a2b8;
+    font-weight: bold;
+}
+
+.progress {
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.card {
+    margin: 10px;
+}
+
+.btn-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-email img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-links a {
+    display: block;
+    margin: 10px 0;
+}
+
+.contact-links a:hover {
+    color: #17a2b8;
+}
+
+img.profile-photo {
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 20%;
+}
+
+section {
+    margin-bottom: 50px;
+    display: none;
+    /* Initially hidden */
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+    /* Add vertical scrollbar when content exceeds viewport */
+}
+
+
+
+.section-content {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.section-content h3 {
+    color: #333;
+    /* Adjust color as needed */
+    font-size: 1.5rem;
+    /* Adjust size as needed */
+    margin-bottom: 5px;
+    /* Add space between heading and image */
+}
+
+
+/* For skillls */
+
+#skills {
+    padding: 50px 0;
+    /* Increase padding to provide space */
+    overflow-y: auto;
+    /* Add vertical scrollbar when content overflows */
+    max-height: calc(100vh - 200px);
+    /* Limit max height to fit within viewport */
+}
+
+#skills .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allow skills to wrap to the next row */
+}
+
+.col-md-3 {
+    flex: 0 0 calc(25% - 20px);
+    /* Adjust width to fit 4 columns per row */
+    margin-bottom: 20px;
+    /* Add margin between skill cards */
+}
+
+.step-icon img {
+    width: 80px;
+    /* Reduce size of skill icons */
+    height: 80px;
+    transition: transform 0.3s ease-out;
+    /* Add transition effect for hover */
+}
+
+.step-icon:hover img {
+    transform: scale(1.1);
+    /* Scale up skill icon on hover */
+}
+
+/* Animation for skills */
+
+.progress-bar {
+    height: 20px;
+    /* Adjust as per your design */
+    background-color: #17a2b8;
+    width: 0;
+    /* Initial width set to 0 */
+    border-radius: 5px;
+}
+
+
+
+.section-content {
+    animation: fadeIn 1s ease-in-out;
+    /* Fade-in animation for the section content */
+}
+
+.section-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    /* Add spacing around images */
+}
+
+.home img {
+    margin-left: 15%;
+    max-width: 70%;
+    height: auto;
+    margin: 10px;
+    /* Add spacing around images */
+}
+
+/*-----------Main HOme---------*/
+
+.section-content h3 {
+    font-size: 1.5rem;
+    /* Example: Responsive font size */
+    margin-bottom: 5px;
+}
+
+.section-content p {
+    font-size: 1rem;
+    /* Example: Responsive font size for paragraphs */
+    margin-bottom: 20px;
+}
+
+.display-3 {
+    font-size: 2.5rem;
+    /* Example: Larger font size for heading */
+}
+
+.section-content .about_p {
+    font-size: 20px;
+    /* Example: Responsive font size for paragraphs */
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    /* Media query for smaller screens (e.g., tablets and mobile devices) */
+    .display-3 {
+        font-size: 2rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .section-content h3 {
+        font-size: 1.2rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .section-content p {
+        font-size: 0.9rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    main {
+        margin-left: 0%;
+    }
+
+    .section-content img {
+        max-width: 100%;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
